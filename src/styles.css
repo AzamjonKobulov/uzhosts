@@ -90,7 +90,7 @@
   }
 
   h2 {
-    @apply font-bold text-center text-3xl lg:text-[42px] leading-10 lg:leading-[62px];
+    @apply font-bold text-center text-2xl lg:text-[32px] leading-10 lg:leading-[47px];
   }
 
   h3 {
