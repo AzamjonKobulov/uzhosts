@@ -2,6 +2,7 @@
 document.getElementById("mobileMenuBtn").addEventListener("click", function () {
   const mobileMenu = document.getElementById("mobileMenu");
   mobileMenu.classList.toggle("hidden");
+  document.body.classList.toggle("overflow-hidden");
 });
 
 // Close the mobile menu when any link or button is clicked
@@ -13,6 +14,7 @@ mobileMenuLinksAndButtons.forEach(function (element) {
   element.addEventListener("click", function () {
     const mobileMenu = document.getElementById("mobileMenu");
     mobileMenu.classList.add("hidden");
+    document.body.classList.toggle("overflow-hidden");
   });
 });
 

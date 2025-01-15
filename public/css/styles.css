@@ -816,6 +816,9 @@ h4 {
   margin-top: calc(72px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(72px * var(--tw-space-y-reverse));
 }
+.overflow-hidden {
+  overflow: hidden;
+}
 .whitespace-nowrap {
   white-space: nowrap;
 }
