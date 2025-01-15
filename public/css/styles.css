@@ -675,6 +675,9 @@ h4 {
 .-mt-20 {
   margin-top: -5rem;
 }
+.-mt-24 {
+  margin-top: -6rem;
+}
 .flex {
   display: flex;
 }
@@ -1000,9 +1003,6 @@ h4 {
 .pt-7 {
   padding-top: 1.75rem;
 }
-.pt-20 {
-  padding-top: 5rem;
-}
 .text-center {
   text-align: center;
 }
@@ -1093,11 +1093,6 @@ h4 {
 }
 .line-through {
   text-decoration-line: line-through;
-}
-.backdrop-blur {
-  --tw-backdrop-blur: blur(8px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 .transition-all {
   transition-property: all;
