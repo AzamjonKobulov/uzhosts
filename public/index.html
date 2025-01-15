@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>UzHosts</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="bg-base">
+      <nav
+        class="max-w-base mx-auto flex items-center justify-between border-b border-brand-purple-200 py-4 lg:py-6 px-4"
+      >
+        <!-- Logo -->
+        <a href="/">
+          <img src="./assets/svgs/logo.svg" alt="Logo" />
+        </a>
+
+        <!-- Links -->
+        <ul class="hidden lg:flex items-center gap-5 text-sm leading-5">
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-green transition-all duration-300"
+              >Хостинг</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-bold hover:text-brand-green transition-all duration-300"
+              >SSL-сертификаты</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-green transition-all duration-300"
+              >VPS</a
+            >
+          </li>
+        </ul>
+
+        <!-- Auth -->
+        <div class="flex items-center gap-8">
+          <a
+            href="#"
+            class="hidden xs:block hover:text-brand-green transition-all duration-300"
+            >Свяжитесь с нами</a
+          >
+
+          <div class="hidden lg:flex items-center gap-3">
+            <button
+              class="h-7 font-bold text-xs border border-white rounded-3 hover:bg-brand-green hover:border-brand-green transition-all duration-300 px-2"
+            >
+              Регистрация
+            </button>
+            <button
+              class="h-7 bg-brand-purple font-bold text-xs rounded-3 hover:bg-white hover:text-brand-green transition-all duration-300 px-2"
+            >
+              Войти
+            </button>
+          </div>
+
+          <!-- Mob Menu Btn -->
+          <button class="lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 9h16.5m-16.5 6.75h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Hero -->
+      <section id="hero">
+        <!-- Title -->
+        <div class="bg-base py-10 lg:pt-14 lg:pb-[72px]">
+          <div class="max-w-base mx-auto px-4 md:px-16 lg:px-4">
+            <div class="space-y-6">
+              <h1>Хостинг для сайта</h1>
+
+              <!-- Plans Tabs -->
+              <div
+                class="max-w-fit mx-auto flex items-center font-bold text-xs leading-4"
+              >
+                <button
+                  class="tab-active border-y-2 border-r border-l-2 border-brand-purple-300 rounded-l-sm hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                >
+                  1 месяц
+                </button>
+                <button
+                  class="border-y-2 border-x border-brand-purple-300 hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                >
+                  3 месяца
+                </button>
+                <button
+                  class="border-y-2 border-x border-brand-purple-300 hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                >
+                  6 месяцев
+                </button>
+                <button
+                  class="border-y-2 border-l border-r-2 border-brand-purple-300 rounded-r-sm hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                >
+                  12 месяцев
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full bg-brand-dark pb-8 lg:pb-12">
+          <div class="h-16 bg-base"></div>
+          <div
+            class="max-w-base mx-auto space-y-[72px] px-4 md:px-16 lg:px-4 -mt-16"
+          >
+            <!-- Plans Tab Contents -->
+            <div
+              class="max-w-96 sm:max-w-none mx-auto sm:mx-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6"
+            >
+              <!-- Plan 1 -->
+              <div class="space-y-4 bg-white rounded-lg p-7">
+                <!-- Title -->
+                <h4 class="text-black">Наименование тарифа</h4>
+
+                <!-- Discount -->
+                <div class="flex items-center justify-center gap-2.5">
+                  <span
+                    class="text-brand-gray text-[13px] leading-5 line-through"
+                    >257.00</span
+                  >
+                  <span
+                    class="bg-brand-green text-white font-bold text-[10px] leading-3 rounded-full py-1.5 px-2"
+                    >скидка 20%</span
+                  >
+                </div>
+
+                <!-- Cost -->
+                <p
+                  class="flex items-center justify-center gap-2.5 font-bold text-brand-dark-100"
+                >
+                  <span class="text-[37px] leading-[54px]">148.75</span>
+                  <span class="text-[15px] leading-[22px]">₽/мес.</span>
+                </p>
+
+                <!-- Order Btn -->
+                <button
+                  class="h-10 max-w-[189px] w-full mx-auto block bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                >
+                  Заказать
+                </button>
+
+                <p
+                  class="text-xs font-bold text-brand-green text-center leading-4"
+                >
+                  10 дней бесплатно
+                </p>
+
+                <!-- Features -->
+                <ul
+                  class="max-w-[189px] mx-auto space-y-3 text-[13px] text-brand-dark"
+                >
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/ssd.png" alt="SSD" />
+                    <div>
+                      <p>SSD-диск</p>
+                      <b>1 ГБ</b>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/ram.png" alt="SSD" />
+                    <div>
+                      <p>Оперативная память</p>
+                      <b>128 МБ</b>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/site.png" alt="SSD" />
+                    <div>
+                      <p>Сайт</p>
+                      <b>1 шт</b>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/site.png" alt="SSD" />
+                    <div>
+                      <p>Панель управления</p>
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/hestia-logo.png"
+                          alt="Hestia Logo"
+                          class="w-[30px] h-[15px]"
+                        />
+                        <img
+                          src="./assets/images/isp-config-logo.png"
+                          alt="ISP Config Logo"
+                          class="w-[72.26px] h-[13px]"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Plan 2 -->
+              <div class="space-y-4 bg-white rounded-lg p-7">
+                <!-- Title -->
+                <h4 class="text-black">Наименование тарифа</h4>
+
+                <!-- Discount -->
+                <div class="flex items-center justify-center gap-2.5">
+                  <span
+                    class="text-brand-gray text-[13px] leading-5 line-through"
+                    >257.00</span
+                  >
+                  <span
+                    class="bg-brand-green text-white font-bold text-[10px] leading-3 rounded-full py-1.5 px-2"
+                    >скидка 20%</span
+                  >
+                </div>
+
+                <!-- Cost -->
+                <p
+                  class="flex items-center justify-center gap-2.5 font-bold text-brand-dark-100"
+                >
+                  <span class="text-[37px] leading-[54px]">148.75</span>
+                  <span class="text-[15px] leading-[22px]">₽/мес.</span>
+                </p>
+
+                <!-- Order Btn -->
+                <button
+                  class="h-10 max-w-[189px] w-full mx-auto block bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                >
+                  Заказать
+                </button>
+
+                <p
+                  class="text-xs font-bold text-brand-green text-center leading-4"
+                >
+                  10 дней бесплатно
+                </p>
+
+                <!-- Features -->
+                <ul
+                  class="max-w-[189px] mx-auto space-y-3 text-[13px] text-brand-dark"
+                >
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/ssd.png" alt="SSD" />
+                    <div>
+                      <p>SSD-диск</p>
+                      <b>1 ГБ</b>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/ram.png" alt="SSD" />
+                    <div>
+                      <p>Оперативная память</p>
+                      <b>128 МБ</b>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/site.png" alt="SSD" />
+                    <div>
+                      <p>Сайт</p>
+                      <b>1 шт</b>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/site.png" alt="SSD" />
+                    <div>
+                      <p>Панель управления</p>
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/hestia-logo.png"
+                          alt="Hestia Logo"
+                          class="w-[30px] h-[15px]"
+                        />
+                        <img
+                          src="./assets/images/isp-config-logo.png"
+                          alt="ISP Config Logo"
+                          class="w-[72.26px] h-[13px]"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- Plan 3 -->
+              <div class="space-y-4 bg-white rounded-lg p-7">
+                <!-- Title -->
+                <h4 class="text-black">Наименование тарифа</h4>
+
+                <!-- Discount -->
+                <div class="flex items-center justify-center gap-2.5">
+                  <span
+                    class="text-brand-gray text-[13px] leading-5 line-through"
+                    >257.00</span
+                  >
+                  <span
+                    class="bg-brand-green text-white font-bold text-[10px] leading-3 rounded-full py-1.5 px-2"
+                    >скидка 20%</span
+                  >
+                </div>
+
+                <!-- Cost -->
+                <p
+                  class="flex items-center justify-center gap-2.5 font-bold text-brand-dark-100"
+                >
+                  <span class="text-[37px] leading-[54px]">148.75</span>
+                  <span class="text-[15px] leading-[22px]">₽/мес.</span>
+                </p>
+
+                <!-- Order Btn -->
+                <button
+                  class="h-10 max-w-[189px] w-full mx-auto block bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                >
+                  Заказать
+                </button>
+
+                <p
+                  class="text-xs font-bold text-brand-green text-center leading-4"
+                >
+                  10 дней бесплатно
+                </p>
+
+                <!-- Features -->
+                <ul
+                  class="max-w-[189px] mx-auto space-y-3 text-[13px] text-brand-dark"
+                >
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/ssd.png" alt="SSD" />
+                    <div>
+                      <p>SSD-диск</p>
+                      <b>1 ГБ</b>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/ram.png" alt="SSD" />
+                    <div>
+                      <p>Оперативная память</p>
+                      <b>128 МБ</b>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/site.png" alt="SSD" />
+                    <div>
+                      <p>Сайт</p>
+                      <b>1 шт</b>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img src="./assets/images/site.png" alt="SSD" />
+                    <div>
+                      <p>Панель управления</p>
+                      <div class="flex items-center gap-3">
+                        <img
+                          src="./assets/images/hestia-logo.png"
+                          alt="Hestia Logo"
+                          class="w-[30px] h-[15px]"
+                        />
+                        <img
+                          src="./assets/images/isp-config-logo.png"
+                          alt="ISP Config Logo"
+                          class="w-[72.26px] h-[13px]"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Items -->
+            <div
+              class="max-w-96 sm:max-w-none mx-auto sm:mx-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-11"
+            >
+              <!-- Item 1 -->
+              <div class="space-y-5 sm:space-y-8">
+                <img
+                  src="./assets/images/item-1.png"
+                  alt="Image"
+                  class="w-16 h-20 sm:size-auto"
+                />
+
+                <!-- Texts -->
+                <div class="space-y-4 sm:space-y-6">
+                  <h3 class="text-start">Правила резервного копирования</h3>
+                  <p class="text-sm sm:text-base">
+                    В соответствии с правилами резервного копирования cPanel или
+                    DirectAdmin, приложение не обеспечивает резервного
+                    копирования для обычного хостинга. Администратор
+                    cPanel/DirectAdmin имеет возможность настроить
+                    автоматическое резервное копирование, что требует наличия
+                    хостинг-серверов с большим объемом памяти.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="space-y-5 sm:space-y-8">
+                <img
+                  src="./assets/images/item-2.png"
+                  alt="Image"
+                  class="w-16 h-20 sm:size-auto"
+                />
+
+                <!-- Texts -->
+                <div class="space-y-4 sm:space-y-6">
+                  <h3 class="text-start">Высокая скорость</h3>
+                  <p class="text-sm sm:text-base">
+                    Наши серверы оснащены высокопроизводительными процессорами и
+                    большим объемом оперативной памяти для обеспечения
+                    оптимальной производительности.
+                  </p>
+                </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="space-y-5 sm:space-y-8">
+                <img
+                  src="./assets/images/item-3.png"
+                  alt="Image"
+                  class="w-16 h-20 sm:size-auto"
+                />
+
+                <!-- Texts -->
+                <div class="space-y-4 sm:space-y-6">
+                  <h3 class="text-start">Распределение ресурсов</h3>
+                  <p class="text-sm sm:text-base">
+                    Распределение ресурсов эффективно осуществляется с помощью
+                    панели управления сPanel/DirectAdmin. Каждый сервер оснащен
+                    SSD-накопителем емкостью 50 ГБ, что обеспечивает повышенную
+                    производительность и возможности хранения данных.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advantages -->
+      <section id="advantages" class="bg-base pt-7 pb-10 lg:pt-[52px] lg:pb-16">
+        <div
+          class="max-w-base mx-auto space-y-6 lg:space-y-10 px-4 md:px-16 lg:px-4"
+        >
+          <h2>Что входит в хостинг для сайта</h2>
+
+          <!-- Hosting Advantages -->
+          <div
+            class="max-w-96 sm:max-w-none mx-auto sm:mx-0 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-11 text-center text-sm sm:text-base"
+          >
+            <!-- Advantage 1 -->
+            <div>
+              <img
+                src="./assets/images/hosting-1.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                Нет ограничений для почты. Количество доступных поддоменов
+                определяется ограничениями выбранного тарифного плана.
+              </p>
+            </div>
+            <!-- Advantage 2 -->
+            <div>
+              <img
+                src="./assets/images/hosting-2.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                Для вас доступны удобные панели управления, такие как
+                AdminDirect или cPanel.
+              </p>
+            </div>
+            <!-- Advantage 3 -->
+            <div>
+              <img
+                src="./assets/images/hosting-3.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                Мы предоставляем бесплатные варианты программного обеспечения
+                для сайтов, такие как WordPress, Prestashop, Drupal, Joomla и
+                др.
+              </p>
+            </div>
+            <!-- Advantage 4 -->
+            <div>
+              <img
+                src="./assets/images/hosting-4.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                Предустановлено несколько версий РНР, Python и Ruby, что
+                позволяет выбрать ту версию, которая соответствует вашим
+                потребностям.
+              </p>
+            </div>
+            <!-- Advantage 5 -->
+            <div>
+              <img
+                src="./assets/images/hosting-1.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                К хостингу предоставляется SSH-доступ, позволяющий безопасно
+                подключаться и управлять хостинговой средой.
+              </p>
+            </div>
+            <!-- Advantage 6 -->
+            <div>
+              <img
+                src="./assets/images/hosting-6.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                Доступна функция ручного резервного копирования, позволяющая
+                пользователям инициировать резервное копирование по мере
+                необходимости. Кроме того, администратор панели имеет
+                возможность настроить автоматическое резервное копирование.
+              </p>
+            </div>
+            <!-- Advantage 7 -->
+            <div>
+              <img
+                src="./assets/images/hosting-1.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                Доступны базы данных MySQL и PostgreSQL (эксклюзивно для
+                cPanel).
+              </p>
+            </div>
+            <!-- Advantage 8 -->
+            <div>
+              <img
+                src="./assets/images/hosting-8.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                Для поддержки управления доменами предусмотрены облачные серверы
+                имен (NS), которые предоставляются бесплатно для основного
+                домена.
+              </p>
+            </div>
+            <!-- Advantage 9 -->
+            <div>
+              <img
+                src="./assets/images/hosting-9.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>Количество файлов не ограничено.</p>
+            </div>
+            <!-- Advantage 10 -->
+            <div>
+              <img
+                src="./assets/images/hosting-10.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                Мы не проверяем и не контролируем файлы и содержимое хостинга.
+              </p>
+            </div>
+            <!-- Advantage 11 -->
+            <div>
+              <img
+                src="./assets/images/hosting-11.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>
+                Администратор панели отвечает за настройку всех правил
+                резервного копирования.
+              </p>
+            </div>
+            <!-- Advantage 12 -->
+            <div>
+              <img
+                src="./assets/images/hosting-12.png"
+                alt="Hosting Advantage"
+                class="size-24 sm:size-auto mx-auto"
+              />
+              <p>Переход на новый тариф в любое время.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section id="reviews" class="bg-brand-dark pb-14 pt-6 md:pb-0">
+        <div class="max-w-base mx-auto space-y-7 px-4 md:px-16 lg:px-4">
+          <h2>Отзывы</h2>
+
+          <div class="relative">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- Review 1 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Review 2 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Review 3 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Review 4 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Review 5 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Navigation Btns -->
+            <div
+              class="absolute -bottom-7 md:bottom-auto z-10 w-full md:top-1/2 md:-translate-y-1/2 flex items-center justify-center md:justify-between gap-8"
+            >
+              <!-- Prev -->
+              <button class="reviews-button-prev group md:-ml-5">
+                <svg
+                  width="9"
+                  height="15"
+                  viewBox="0 0 9 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-purple group-disabled:fill-brand-purple-400"
+                >
+                  <path
+                    d="M7.33139 15L7.07659 14.8889C4.72557 12.6199 2.41096 10.2918 0.131205 7.95039C-0.104434 7.55651 -0.00634766 7.15612 0.30094 6.84194C2.58337 4.60586 4.78381 2.27324 7.11529 0.0946379C7.4904 -0.0908079 7.8065 0.0122604 8.10842 0.265906C8.55249 0.639479 9.04829 1.16669 8.67395 1.77016L2.96921 7.51207L8.64406 13.2038C8.91419 13.6184 8.8184 13.9728 8.51801 14.3268C8.29157 14.5931 7.98274 14.8801 7.65323 15H7.331H7.33139Z"
+                  />
+                </svg>
+              </button>
+
+              <!-- Next -->
+              <button class="reviews-button-next group md:-mr-5">
+                <svg
+                  width="9"
+                  height="15"
+                  viewBox="0 0 9 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-purple group-disabled:fill-brand-purple-400"
+                >
+                  <g clip-path="url(#clip0_11_338)">
+                    <path
+                      d="M1.66843 0L1.92323 0.111114C4.27424 2.38014 6.58886 4.70817 8.86861 7.04961C9.10425 7.44349 9.00616 7.84388 8.69888 8.15806C6.41644 10.3941 4.216 12.7268 1.88453 14.9054C1.50942 15.0908 1.19332 14.9877 0.891398 14.7341C0.447326 14.3605 -0.0484724 13.8333 0.325867 13.2298L6.03061 7.48793L0.355752 1.79621C0.0856307 1.38164 0.181419 1.02723 0.481809 0.673197C0.708252 0.406907 1.01707 0.119926 1.34658 0H1.66881H1.66843Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11_338">
+                      <rect
+                        width="8.80559"
+                        height="15"
+                        fill="white"
+                        transform="translate(0.194275)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Questions -->
+      <section id="questions" class="bg-brand-dark-300 pt-6 pb-14">
+        <div class="max-w-base mx-auto space-y-7 px-4 md:px-16 lg:px-4">
+          <h2>Популярные вопросы о хостинге</h2>
+
+          <!-- Qeustions -->
+          <div class="space-y-3">
+            <!-- Question 1 -->
+            <div
+              class="space-y-3 bg-brand-purple-100 text-brand-dark-200 rounded-[10px] p-5"
+            >
+              <!-- Question -->
+              <h3 class="text-start">А “потянет” ли хостинг мой сайт?</h3>
+
+              <p class="text-sm sm:text-base">
+                Каждый сайт по-своему уникален и точно ответить на вопрос
+                нельзя. Потому мы предлагаем бесплатный 10-дневный период для
+                проверки хостинга. Никаких оплат: заказывайте и проверяйте.
+                Когда убедитесь, что сайт работает - продлите заказ и
+                продолжайте работать, ведь тестовый хостинг работает на тех же
+                серверах, что и обычный.
+              </p>
+            </div>
+            <!-- Question 2 -->
+            <div
+              class="space-y-3 bg-brand-purple-100 text-brand-dark-200 rounded-[10px] p-5"
+            >
+              <!-- Question -->
+              <h3 class="text-start">Что такое shared хостинг?</h3>
+
+              <p class="text-sm sm:text-base">
+                Shared хостинг — это тип хостинга, где все хостинг аккаунты
+                находятся на одном сервере. Ресурсы равноценно распределены
+                между всеми хостингами на сервере. Самый распространенный и
+                недорогой вид хостинга.
+              </p>
+            </div>
+            <!-- Question 1 -->
+            <div
+              class="space-y-3 bg-brand-purple-100 text-brand-dark-200 rounded-[10px] p-5"
+            >
+              <!-- Question -->
+              <h3 class="text-start">
+                Я могу получить только один бесплатный SSL-сертификат?
+              </h3>
+
+              <p class="text-sm sm:text-base">
+                На хостинге вы можете получить сертификаты для всех доменов, так
+                что даже в тарифе Uzhosts-L все ваши домены получат бесплатный
+                SSL-сертификат. Бесплатный SSL-сертификат в любое время можно
+                заменить на платный, если для этого есть необходимость.
+              </p>
+            </div>
+            <!-- Question 1 -->
+            <div
+              class="space-y-3 bg-brand-purple-100 text-brand-dark-200 rounded-[10px] p-5"
+            >
+              <!-- Question -->
+              <h3 class="text-start">Что такое хостинг и зачем он нужен?</h3>
+
+              <p class="text-sm sm:text-base">
+                Хостинг - это специальный сервис, на котором можно разместить,
+                файлы вашего сайта, а также создать доменную почту вида
+                name@site.ru. На хостинге можно загрузить файлы сайта самому или
+                установить CMS, например WordPress, в несколько кликов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Support -->
+      <section
+        id="support"
+        class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 bg-brand-purple-500 px-4 md:px-16 lg:px-4 py-5"
+      >
+        <p class="text-base text-center sm:text-lg sm:leading-6">
+          Нужна помощь? Наша поддержка будет рада вам помочь.
+        </p>
+        <button
+          class="h-7 font-bold text-xs leading-4 whitespace-nowrap border border-white rounded-3 hover:bg-brand-green hover:border-brand-green transition-all duration-300 px-2"
+        >
+          Обратиться в службу поддержки
+        </button>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark-400">
+      <div class="max-w-base mx-auto pt-3 pb-11 px-4 md:px-16 lg:px-4">
+        <!-- Top Links -->
+        <div
+          class="max-w-[600px] flex flex-col sm:flex-row sm:justify-between gap-6"
+        >
+          <!-- Links 1 -->
+          <ul class="space-y-0.5 text-sm text-brand-gray-100 leading-5">
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >Хостинг</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >SSL-сертификаты</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >VPS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >Цены</a
+              >
+            </li>
+          </ul>
+          <!-- Links 2 -->
+          <ul class="space-y-0.5 text-sm text-brand-gray-100 leading-5">
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >Новости</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >О компании</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >Партнерская программа</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+          <!-- Contacts -->
+          <ul class="space-y-0.5 text-sm text-brand-gray-100 leading-5">
+            <li class="flex flex-col">
+              <a
+                href="mailto:admin@uzhosts.com"
+                class="text-brand-purple font-bold hover:text-brand-green transition-all duration-300"
+                >admin@uzhosts.com</a
+              >
+              <span class="text-xs">онлайн-поддержка</span>
+            </li>
+            <li class="flex flex-col">
+              <a
+                href="№"
+                class="text-brand-purple font-bold hover:text-brand-green transition-all duration-300"
+                >Livechat</a
+              >
+              <span class="text-xs">онлайн чат</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Payment Logos -->
+      <div class="border-y-2 border-brand-dark-500 py-2.5 sm:pt-4 sm:pb-3.5">
+        <div
+          class="max-w-base mx-auto grid grid-cols-3 sm:flex items-center justify-center gap-5 sm:gap-10 pt-3 pb-4 px-4 md:px-16 lg:px-4"
+        >
+          <img
+            src="./assets/svgs/mastercard.svg"
+            class="mx-auto"
+            alt="MasterCard Logo"
+          />
+          <img src="./assets/svgs/visa.svg" class="mx-auto" alt="Visa Logo" />
+          <img
+            src="./assets/svgs/paypal.svg"
+            class="mx-auto"
+            alt="PayPal Logo"
+          />
+          <img src="./assets/svgs/sepa.svg" class="mx-auto" alt="Sepa Logo" />
+          <img src="./assets/svgs/swift.svg" class="mx-auto" alt="Swift Logo" />
+          <img src="./assets/svgs/ozen.svg" class="mx-auto" alt="Ozen Logo" />
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div
+        class="max-w-base mx-auto flex flex-col items-center sm:justify-between gap-4 text-brand-gray-100 py-3 px-4 md:px-16 lg:px-4"
+      >
+        <p class="text-xs">© 2023 Uzhosts.com. Все права защищены.</p>
+
+        <div class="flex items-center gap-5 text-xs">
+          <a
+            href="#"
+            class="font-bold hover:text-brand-green transition-all duration-300"
+            >Условия использования</a
+          >
+          <a
+            href="#"
+            class="font-bold hover:text-brand-green transition-all duration-300"
+            >Политика конфиденциальности</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
