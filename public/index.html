@@ -109,21 +109,25 @@
               >
                 <button
                   class="tab-active border-y-2 border-r border-l-2 border-brand-purple-300 rounded-l-sm hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                  data-period="1"
                 >
                   1 месяц
                 </button>
                 <button
                   class="border-y-2 border-x border-brand-purple-300 hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                  data-period="3"
                 >
                   3 месяца
                 </button>
                 <button
                   class="border-y-2 border-x border-brand-purple-300 hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                  data-period="6"
                 >
                   6 месяцев
                 </button>
                 <button
                   class="border-y-2 border-l border-r-2 border-brand-purple-300 rounded-r-sm hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                  data-period="12"
                 >
                   12 месяцев
                 </button>
@@ -139,17 +143,21 @@
           >
             <!-- Plans Tab Contents -->
             <div
-              class="max-w-72 xs:max-w-96 sm:max-w-none mx-auto sm:mx-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6"
+              class="max-w-72 xs:max-w-96 sm:max-w-none mx-auto sm:mx-0 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mt-6"
             >
               <!-- Plan 1 -->
-              <div class="space-y-4 bg-white rounded-lg p-7">
-                <!-- Title -->
+              <div
+                class="plan space-y-4 bg-white rounded-lg p-7"
+                data-price="148.75"
+                data-original-price="257.00"
+                data-discount="20"
+              >
                 <h4 class="text-black">Наименование тарифа</h4>
 
                 <!-- Discount -->
                 <div class="flex items-center justify-center gap-2.5">
                   <span
-                    class="text-brand-gray text-[13px] leading-5 line-through"
+                    class="text-brand-gray text-[13px] leading-5 line-through original-price"
                     >257.00</span
                   >
                   <span
@@ -160,9 +168,9 @@
 
                 <!-- Cost -->
                 <p
-                  class="flex items-center justify-center gap-2.5 font-bold text-brand-dark-100"
+                  class="cost flex items-center justify-center gap-2.5 font-bold text-brand-dark-100"
                 >
-                  <span class="text-[37px] leading-[54px]">148.75</span>
+                  <span class="price text-[37px] leading-[54px]">148.75</span>
                   <span class="text-[15px] leading-[22px]">₽/мес.</span>
                 </p>
 
@@ -192,79 +200,57 @@
                     </div>
                   </li>
                   <li class="flex items-center gap-2.5">
-                    <img src="./assets/images/ram.png" alt="SSD" />
+                    <img src="./assets/images/ram.png" alt="RAM" />
                     <div>
                       <p>Оперативная память</p>
                       <b>128 МБ</b>
                     </div>
                   </li>
                   <li class="flex items-center gap-2.5">
-                    <img src="./assets/images/site.png" alt="SSD" />
+                    <img src="./assets/images/site.png" alt="Website" />
                     <div>
                       <p>Сайт</p>
                       <b>1 шт</b>
                     </div>
                   </li>
-                  <li class="flex items-center gap-2.5">
-                    <img src="./assets/images/site.png" alt="SSD" />
-                    <div>
-                      <p>Панель управления</p>
-                      <div class="flex items-center gap-3">
-                        <img
-                          src="./assets/images/hestia-logo.png"
-                          alt="Hestia Logo"
-                          class="w-[30px] h-[15px]"
-                        />
-                        <img
-                          src="./assets/images/isp-config-logo.png"
-                          alt="ISP Config Logo"
-                          class="w-[72.26px] h-[13px]"
-                        />
-                      </div>
-                    </div>
-                  </li>
                 </ul>
               </div>
+
               <!-- Plan 2 -->
-              <div class="space-y-4 bg-white rounded-lg p-7">
-                <!-- Title -->
+              <div
+                class="plan space-y-4 bg-white rounded-lg p-7"
+                data-price="195.00"
+                data-original-price="300.00"
+                data-discount="20"
+              >
                 <h4 class="text-black">Наименование тарифа</h4>
-
-                <!-- Discount -->
                 <div class="flex items-center justify-center gap-2.5">
                   <span
-                    class="text-brand-gray text-[13px] leading-5 line-through"
-                    >257.00</span
+                    class="text-brand-gray text-[13px] leading-5 line-through original-price"
+                    >300.00</span
                   >
                   <span
                     class="bg-brand-green text-white font-bold text-[10px] leading-3 rounded-full py-1.5 px-2"
                     >скидка 20%</span
                   >
                 </div>
-
-                <!-- Cost -->
                 <p
-                  class="flex items-center justify-center gap-2.5 font-bold text-brand-dark-100"
+                  class="cost flex items-center justify-center gap-2.5 font-bold text-brand-dark-100"
                 >
-                  <span class="text-[37px] leading-[54px]">148.75</span>
+                  <span class="price text-[37px] leading-[54px]">195.00</span>
                   <span class="text-[15px] leading-[22px]">₽/мес.</span>
                 </p>
-
-                <!-- Order Btn -->
                 <a
                   href="#"
                   class="h-10 max-w-[189px] w-full mx-auto flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
                 >
                   Заказать
                 </a>
-
                 <p
                   class="text-xs font-bold text-brand-green text-center leading-4"
                 >
                   10 дней бесплатно
                 </p>
-
-                <!-- Features -->
                 <ul
                   class="max-w-[189px] mx-auto space-y-3 text-[13px] text-brand-dark"
                 >
@@ -272,83 +258,61 @@
                     <img src="./assets/images/ssd.png" alt="SSD" />
                     <div>
                       <p>SSD-диск</p>
-                      <b>1 ГБ</b>
+                      <b>1.5 ГБ</b>
                     </div>
                   </li>
                   <li class="flex items-center gap-2.5">
-                    <img src="./assets/images/ram.png" alt="SSD" />
+                    <img src="./assets/images/ram.png" alt="RAM" />
                     <div>
                       <p>Оперативная память</p>
-                      <b>128 МБ</b>
+                      <b>256 МБ</b>
                     </div>
                   </li>
                   <li class="flex items-center gap-2.5">
-                    <img src="./assets/images/site.png" alt="SSD" />
+                    <img src="./assets/images/site.png" alt="Website" />
                     <div>
                       <p>Сайт</p>
-                      <b>1 шт</b>
-                    </div>
-                  </li>
-                  <li class="flex items-center gap-2.5">
-                    <img src="./assets/images/site.png" alt="SSD" />
-                    <div>
-                      <p>Панель управления</p>
-                      <div class="flex items-center gap-3">
-                        <img
-                          src="./assets/images/hestia-logo.png"
-                          alt="Hestia Logo"
-                          class="w-[30px] h-[15px]"
-                        />
-                        <img
-                          src="./assets/images/isp-config-logo.png"
-                          alt="ISP Config Logo"
-                          class="w-[72.26px] h-[13px]"
-                        />
-                      </div>
+                      <b>2 шт</b>
                     </div>
                   </li>
                 </ul>
               </div>
-              <!-- Plan 3 -->
-              <div class="space-y-4 bg-white rounded-lg p-7">
-                <!-- Title -->
-                <h4 class="text-black">Наименование тарифа</h4>
 
-                <!-- Discount -->
+              <!-- Plan 3 -->
+              <div
+                class="plan space-y-4 bg-white rounded-lg p-7"
+                data-price="249.99"
+                data-original-price="400.00"
+                data-discount="25"
+              >
+                <h4 class="text-black">Наименование тарифа</h4>
                 <div class="flex items-center justify-center gap-2.5">
                   <span
-                    class="text-brand-gray text-[13px] leading-5 line-through"
-                    >257.00</span
+                    class="text-brand-gray text-[13px] leading-5 line-through original-price"
+                    >400.00</span
                   >
                   <span
                     class="bg-brand-green text-white font-bold text-[10px] leading-3 rounded-full py-1.5 px-2"
-                    >скидка 20%</span
+                    >скидка 25%</span
                   >
                 </div>
-
-                <!-- Cost -->
                 <p
-                  class="flex items-center justify-center gap-2.5 font-bold text-brand-dark-100"
+                  class="cost flex items-center justify-center gap-2.5 font-bold text-brand-dark-100"
                 >
-                  <span class="text-[37px] leading-[54px]">148.75</span>
+                  <span class="price text-[37px] leading-[54px]">249.99</span>
                   <span class="text-[15px] leading-[22px]">₽/мес.</span>
                 </p>
-
-                <!-- Order Btn -->
                 <a
                   href="#"
                   class="h-10 max-w-[189px] w-full mx-auto flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
                 >
                   Заказать
                 </a>
-
                 <p
                   class="text-xs font-bold text-brand-green text-center leading-4"
                 >
                   10 дней бесплатно
                 </p>
-
-                <!-- Features -->
                 <ul
                   class="max-w-[189px] mx-auto space-y-3 text-[13px] text-brand-dark"
                 >
@@ -356,39 +320,21 @@
                     <img src="./assets/images/ssd.png" alt="SSD" />
                     <div>
                       <p>SSD-диск</p>
-                      <b>1 ГБ</b>
+                      <b>2 ГБ</b>
                     </div>
                   </li>
                   <li class="flex items-center gap-2.5">
-                    <img src="./assets/images/ram.png" alt="SSD" />
+                    <img src="./assets/images/ram.png" alt="RAM" />
                     <div>
                       <p>Оперативная память</p>
-                      <b>128 МБ</b>
+                      <b>512 МБ</b>
                     </div>
                   </li>
                   <li class="flex items-center gap-2.5">
-                    <img src="./assets/images/site.png" alt="SSD" />
+                    <img src="./assets/images/site.png" alt="Website" />
                     <div>
                       <p>Сайт</p>
-                      <b>1 шт</b>
-                    </div>
-                  </li>
-                  <li class="flex items-center gap-2.5">
-                    <img src="./assets/images/site.png" alt="SSD" />
-                    <div>
-                      <p>Панель управления</p>
-                      <div class="flex items-center gap-3">
-                        <img
-                          src="./assets/images/hestia-logo.png"
-                          alt="Hestia Logo"
-                          class="w-[30px] h-[15px]"
-                        />
-                        <img
-                          src="./assets/images/isp-config-logo.png"
-                          alt="ISP Config Logo"
-                          class="w-[72.26px] h-[13px]"
-                        />
-                      </div>
+                      <b>3 шт</b>
                     </div>
                   </li>
                 </ul>
