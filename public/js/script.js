@@ -1,3 +1,21 @@
+// Toggle mobile menu visibility
+document.getElementById("mobileMenuBtn").addEventListener("click", function () {
+  const mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.classList.toggle("hidden");
+});
+
+// Close the mobile menu when any link or button is clicked
+const mobileMenuLinksAndButtons = document.querySelectorAll(
+  "#mobileMenu a, #mobileMenu button"
+);
+
+mobileMenuLinksAndButtons.forEach(function (element) {
+  element.addEventListener("click", function () {
+    const mobileMenu = document.getElementById("mobileMenu");
+    mobileMenu.classList.add("hidden");
+  });
+});
+
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".reviews-button-next",
@@ -28,7 +46,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // Select buttons and plans
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".tab-button");
 const plans = document.querySelectorAll(".plan");
 
 // Add event listener for each button to update prices

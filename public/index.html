@@ -73,7 +73,7 @@
           </div>
 
           <!-- Mob Menu Btn -->
-          <button class="lg:hidden">
+          <button class="lg:hidden" id="mobileMenuBtn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -91,6 +91,54 @@
           </button>
         </div>
       </nav>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div class="fade-in backdrop-blur lg:hidden hidden" id="mobileMenu">
+        <ul class="flex flex-col gap-4 text-sm leading-5 py-4 px-6">
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-green transition-all duration-300"
+              >Хостинг</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="font-bold hover:text-brand-green transition-all duration-300"
+              >SSL-сертификаты</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-green transition-all duration-300"
+              >VPS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-green transition-all duration-300"
+              >Свяжитесь с нами</a
+            >
+          </li>
+          <li>
+            <button
+              class="w-full h-8 font-bold text-xs border border-white rounded-3 hover:bg-brand-green hover:border-brand-green transition-all duration-300 px-2"
+            >
+              Регистрация
+            </button>
+          </li>
+          <li>
+            <button
+              class="w-full h-8 bg-brand-purple font-bold text-xs rounded-3 hover:bg-white hover:text-brand-green transition-all duration-300 px-2"
+            >
+              Войти
+            </button>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- MAIN -->
@@ -108,25 +156,25 @@
                 class="max-w-fit mx-auto flex items-center font-bold text-xs leading-4"
               >
                 <button
-                  class="tab-active border-y-2 border-r border-l-2 border-brand-purple-300 rounded-l-sm hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                  class="tab-button tab-active border-y-2 border-r border-l-2 border-brand-purple-300 rounded-l-sm hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
                   data-period="1"
                 >
                   1 месяц
                 </button>
                 <button
-                  class="border-y-2 border-x border-brand-purple-300 hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                  class="tab-button border-y-2 border-x border-brand-purple-300 hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
                   data-period="3"
                 >
                   3 месяца
                 </button>
                 <button
-                  class="border-y-2 border-x border-brand-purple-300 hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                  class="tab-button border-y-2 border-x border-brand-purple-300 hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
                   data-period="6"
                 >
                   6 месяцев
                 </button>
                 <button
-                  class="border-y-2 border-l border-r-2 border-brand-purple-300 rounded-r-sm hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
+                  class="tab-button border-y-2 border-l border-r-2 border-brand-purple-300 rounded-r-sm hover:bg-white hover:border-white hover:text-brand-purple transition-all duration-300 py-1 px-3.5"
                   data-period="12"
                 >
                   12 месяцев

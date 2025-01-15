@@ -672,6 +672,9 @@ h4 {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.-mt-20 {
+  margin-top: -5rem;
+}
 .flex {
   display: flex;
 }
@@ -704,6 +707,9 @@ h4 {
 }
 .h-7 {
   height: 1.75rem;
+}
+.h-8 {
+  height: 2rem;
 }
 .h-full {
   height: 100%;
@@ -935,6 +941,10 @@ h4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -986,6 +996,9 @@ h4 {
 }
 .pt-7 {
   padding-top: 1.75rem;
+}
+.pt-20 {
+  padding-top: 5rem;
 }
 .text-center {
   text-align: center;
@@ -1078,6 +1091,11 @@ h4 {
 .line-through {
   text-decoration-line: line-through;
 }
+.backdrop-blur {
+  --tw-backdrop-blur: blur(8px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1110,6 +1128,21 @@ h4 {
 .swiper-pagination-bullet-active {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1)) !important;
+}
+
+.fade-in {
+  animation: fadeIn 0.2s ease-in-out forwards, scaleIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .hover\:border-brand-green:hover {
