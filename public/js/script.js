@@ -81,3 +81,21 @@ buttons.forEach((button) => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Get the current page URL
+  const currentUrl = window.location.pathname;
+
+  // Select all navigation links
+  const navLinks = document.querySelectorAll("nav a");
+
+  // Loop through each link and compare its href with the current URL
+  navLinks.forEach((link) => {
+    const linkPath = new URL(link.href).pathname; // Get the absolute path of the link
+    if (linkPath === currentUrl) {
+      link.classList.add("font-bold"); // Add the active class
+    } else {
+      link.classList.remove("font-bold"); // Ensure others don't have the class
+    }
+  });
+});
