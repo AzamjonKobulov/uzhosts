@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>UzHosts</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="bg-base">
+      <nav
+        class="max-w-base mx-auto flex items-center justify-between border-b border-brand-purple-200 py-4 lg:py-6 px-4"
+      >
+        <!-- Logo -->
+        <a href="./index.html">
+          <img src="./assets/svgs/logo.svg" alt="Logo" />
+        </a>
+
+        <!-- Links -->
+        <ul class="hidden lg:flex items-center gap-5 text-sm leading-5">
+          <li>
+            <a
+              href="./index.html"
+              class="hover:text-brand-green transition-all duration-300"
+              >Хостинг</a
+            >
+          </li>
+          <li>
+            <a
+              href="./ssl.html"
+              class="font-bold hover:text-brand-green transition-all duration-300"
+              >SSL-сертификаты</a
+            >
+          </li>
+          <li>
+            <a
+              href="./vps.html"
+              class="hover:text-brand-green transition-all duration-300"
+              >VPS</a
+            >
+          </li>
+        </ul>
+
+        <!-- Auth -->
+        <div class="flex items-center gap-8">
+          <a
+            href="#"
+            class="hidden xs:block hover:text-brand-green transition-all duration-300"
+            >Свяжитесь с нами</a
+          >
+
+          <div class="hidden lg:flex items-center gap-3">
+            <button
+              class="h-7 font-bold text-xs border border-white rounded-3 hover:bg-brand-green hover:border-brand-green transition-all duration-300 px-2"
+            >
+              Регистрация
+            </button>
+            <button
+              class="h-7 bg-brand-purple font-bold text-xs rounded-3 hover:bg-white hover:text-brand-green transition-all duration-300 px-2"
+            >
+              Войти
+            </button>
+          </div>
+
+          <!-- Mob Menu Btn -->
+          <button class="lg:hidden" id="mobileMenuBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 9h16.5m-16.5 6.75h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div class="fade-in lg:hidden hidden" id="mobileMenu">
+        <ul class="flex flex-col gap-4 text-sm leading-5 py-4 px-6">
+          <li>
+            <a
+              href="./index.html"
+              class="hover:text-brand-green transition-all duration-300"
+              >Хостинг</a
+            >
+          </li>
+          <li>
+            <a
+              href="./ssl.html"
+              class="font-bold hover:text-brand-green transition-all duration-300"
+              >SSL-сертификаты</a
+            >
+          </li>
+          <li>
+            <a
+              href="./vps.html"
+              class="hover:text-brand-green transition-all duration-300"
+              >VPS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="hover:text-brand-green transition-all duration-300"
+              >Свяжитесь с нами</a
+            >
+          </li>
+          <li>
+            <button
+              class="w-full h-8 font-bold text-xs border border-white rounded-3 hover:bg-brand-green hover:border-brand-green transition-all duration-300 px-2"
+            >
+              Регистрация
+            </button>
+          </li>
+          <li>
+            <button
+              class="w-full h-8 bg-brand-purple font-bold text-xs rounded-3 hover:bg-white hover:text-brand-green transition-all duration-300 px-2"
+            >
+              Войти
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="bg-ssl">
+      <!-- Vps -->
+      <section id="vps">
+        <!-- Title -->
+        <div class="bg-base py-5 lg:pt-14">
+          <div class="max-w-base mx-auto px-4 md:px-16 lg:px-4">
+            <div class="text-center">
+              <h1>VPS хостинг</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full pb-8 lg:pb-12">
+          <div class="h-16 bg-base"></div>
+          <div
+            class="max-w-base mx-auto space-y-[72px] px-4 md:px-16 lg:px-4 -mt-16"
+          >
+            <!-- VPS Info -->
+            <div
+              class="max-w-2xl mx-auto lg:max-w-none relative flex flex-col lg:flex-row items-center justify-between bg-brand-purple-700 rounded-lg p-6"
+            >
+              <div class="max-w-lg lg:max-w-none w-full space-y-7">
+                <h3 class="text-start font-bold text-xl leading-[30px]">
+                  Надежный и быстрый VPS (Virtual Private Server)
+                </h3>
+
+                <div class="space-y-9">
+                  <ul class="space-y-3 text-xs leading-[18px]">
+                    <li class="flex items-center gap-4">
+                      <img src="./assets/svgs/check.svg" alt="Check" />
+                      <span
+                        >Круглосуточно и без выходных предоставляются бесплатные
+                        административные услуги.</span
+                      >
+                    </li>
+                    <li class="flex items-center gap-4">
+                      <img src="./assets/svgs/check.svg" alt="Check" />
+                      <span
+                        >Мы предлагаем возможность использования виртуализации
+                        KVM.</span
+                      >
+                    </li>
+                  </ul>
+
+                  <a
+                    href="#"
+                    class="h-10 w-fit flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300 px-5"
+                  >
+                    Попробовать бесплатно
+                  </a>
+                </div>
+              </div>
+
+              <!-- Image -->
+              <img
+                src="./assets/images/server.png"
+                alt="Server"
+                class="lg:absolute right-5 -top-10"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Hosting -->
+      <section id="best-hosting" class="py-7 lg:pt-[72px] lg:pb-12">
+        <div
+          class="max-w-base mx-auto space-y-6 lg:space-y-10 px-4 md:px-16 lg:px-4"
+        >
+          <h2>Сравнение SSL-сертификатов</h2>
+
+          <!-- Plans -->
+          <div
+            class="max-w-96 sm:max-w-none mx-auto sm:mx-0 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 text-center text-sm sm:text-base"
+            4
+          >
+            <!-- Plan 1 -->
+            <div class="bg-white rounded-lg overflow-hidden">
+              <!-- Title -->
+              <div class="space-y-9 border-b border-brand-gray-300 pt-5 pb-6">
+                <h4 class="text-black">Бесплатные</h4>
+                <div class="space-y-8 text-brand-green">
+                  <h3 class="font-bold text-[28px] text-center">Бесплатно</h3>
+                  <p
+                    class="max-w-[176px] mx-auto flex items-center gap-4 text-xs font-bold text-start"
+                  >
+                    <img src="./assets/svgs/check.svg" alt="" />
+                    Доступен сразу с хостингом Uzhosts.com
+                  </p>
+                </div>
+              </div>
+
+              <!-- Text -->
+              <div class="h-32 text-center pt-6 px-4">
+                <p class="text-[13px] leading-5 text-brand-gray-600 font-bold">
+                  Базовый сертификат без проверки домена. Защищает соединение с
+                  сайтом вашего домена.
+                </p>
+              </div>
+
+              <!-- Features -->
+              <div class="px-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/ip.png"
+                      alt="IP"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>IP</p>
+                      <p class="font-bold">v4 - 1 шт., v6 - /64 - 1</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/kvm.png"
+                      alt="KVM"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Виртуализация</p>
+                      <p class="font-bold">KVM</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/trafik.png"
+                      alt="Trafik"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Трафик</p>
+                      <p class="font-bold">Безлимитный</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/os.png"
+                      alt="OS"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Операционная система</p>
+                      <div class="flex items-center gap-2.5">
+                        <img src="./assets/svgs/windows.svg" alt="Windows" />
+                        <img src="./assets/svgs/linux.svg" alt="Linux" />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/panel-brands.png"
+                      alt="Panel"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Панель управления</p>
+                      <div class="flex items-center gap-2.5">
+                        <img
+                          src="./assets/images/hestia-logo.png"
+                          alt="Hestia"
+                          class="w-[30px] h-4"
+                        />
+                        <img
+                          src="./assets/images/isp-config-logo.png"
+                          alt="ISP config"
+                          class="w-[72px] h-3"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Line -->
+                <div class="border-b border-brand-gray-300 mt-6"></div>
+              </div>
+
+              <!-- Price -->
+              <div
+                class="flex flex-col items-center gap-6 border-b border-brand-gray-300 py-6"
+              >
+                <div
+                  class="flex items-center gap-1.5 text-brand-dark-100 font-bold"
+                >
+                  <h2>от 218</h2>
+                  <p class="text-[15px]">₽/год</p>
+                </div>
+
+                <a
+                  href="#"
+                  class="h-10 max-w-40 sm:max-w-[189px] w-full mx-auto flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                >
+                  Заказать
+                </a>
+              </div>
+
+              <!-- Bottom -->
+              <div
+                class="flex flex-col items-center text-xs font-bold pt-6 pb-7"
+              >
+                <span class="text-brand-green">Взять на тест</span>
+                <span class="text-brand-purple-800">4 дня за 56.00 ₽</span>
+              </div>
+            </div>
+
+            <!-- Plan 2 -->
+            <div class="bg-white rounded-lg overflow-hidden">
+              <!-- Title -->
+              <div class="space-y-5 border-b border-brand-gray-300 pt-5 pb-6">
+                <h4 class="text-black">Проверка домена</h4>
+                <div class="flex flex-col items-center gap-5">
+                  <div
+                    class="flex items-center gap-1.5 text-brand-dark-100 font-bold"
+                  >
+                    <h2>1700.00</h2>
+                    <p class="text-[15px]">₽/год</p>
+                  </div>
+
+                  <a
+                    href="#"
+                    class="h-10 max-w-40 sm:max-w-[189px] w-full mx-auto flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                  >
+                    Заказать
+                  </a>
+                </div>
+              </div>
+
+              <!-- Text -->
+              <div class="h-32 text-center pt-6 px-4">
+                <p class="text-[13px] leading-5 text-brand-gray-600 font-bold">
+                  Базовый сертификат без проверки домена. Защищает соединение с
+                  сайтом вашего домена.
+                </p>
+              </div>
+
+              <!-- Features -->
+              <div class="px-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/ip.png"
+                      alt="IP"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>IP</p>
+                      <p class="font-bold">v4 - 1 шт., v6 - /64 - 1</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/kvm.png"
+                      alt="KVM"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Виртуализация</p>
+                      <p class="font-bold">KVM</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/trafik.png"
+                      alt="Trafik"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Трафик</p>
+                      <p class="font-bold">Безлимитный</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/os.png"
+                      alt="OS"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Операционная система</p>
+                      <div class="flex items-center gap-2.5">
+                        <img src="./assets/svgs/windows.svg" alt="Windows" />
+                        <img src="./assets/svgs/linux.svg" alt="Linux" />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/panel-brands.png"
+                      alt="Panel"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Панель управления</p>
+                      <div class="flex items-center gap-2.5">
+                        <img
+                          src="./assets/images/hestia-logo.png"
+                          alt="Hestia"
+                          class="w-[30px] h-4"
+                        />
+                        <img
+                          src="./assets/images/isp-config-logo.png"
+                          alt="ISP config"
+                          class="w-[72px] h-3"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Line -->
+                <div class="border-b border-brand-gray-300 mt-6"></div>
+              </div>
+
+              <!-- Price -->
+              <div class="flex flex-col items-center gap-6 py-6">
+                <div
+                  class="flex items-center gap-1.5 text-brand-dark-100 font-bold"
+                >
+                  <h2>от 312</h2>
+                  <p class="text-[15px]">₽/год</p>
+                </div>
+
+                <a
+                  href="#"
+                  class="h-10 max-w-40 sm:max-w-[189px] w-full mx-auto flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                >
+                  Заказать
+                </a>
+              </div>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="bg-white rounded-lg overflow-hidden">
+              <!-- Title -->
+              <div class="space-y-5 border-b border-brand-gray-300 pt-5 pb-6">
+                <h4 class="text-black">Защита поддоменов</h4>
+                <div class="flex flex-col items-center gap-5">
+                  <div
+                    class="flex items-center gap-1.5 text-brand-dark-100 font-bold"
+                  >
+                    <h2>7707.50</h2>
+                    <p class="text-[15px]">₽/год</p>
+                  </div>
+
+                  <a
+                    href="#"
+                    class="h-10 max-w-40 sm:max-w-[189px] w-full mx-auto flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                  >
+                    Заказать
+                  </a>
+                </div>
+              </div>
+
+              <!-- Text -->
+              <div class="h-32 text-center pt-6 px-4">
+                <p class="text-[13px] leading-5 text-brand-gray-600 font-bold">
+                  Проверяет домен и защищает соединение с сайтоввсех поддоменов,
+                  но не защищает сам домен.
+                </p>
+              </div>
+
+              <!-- Features -->
+              <div class="px-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/ip.png"
+                      alt="IP"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>IP</p>
+                      <p class="font-bold">v4 - 1 шт., v6 - /64 - 1</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/kvm.png"
+                      alt="KVM"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Виртуализация</p>
+                      <p class="font-bold">KVM</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/trafik.png"
+                      alt="Trafik"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Трафик</p>
+                      <p class="font-bold">Безлимитный</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/os.png"
+                      alt="OS"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Операционная система</p>
+                      <div class="flex items-center gap-2.5">
+                        <img src="./assets/svgs/windows.svg" alt="Windows" />
+                        <img src="./assets/svgs/linux.svg" alt="Linux" />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/panel-brands.png"
+                      alt="Panel"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Панель управления</p>
+                      <div class="flex items-center gap-2.5">
+                        <img
+                          src="./assets/images/hestia-logo.png"
+                          alt="Hestia"
+                          class="w-[30px] h-4"
+                        />
+                        <img
+                          src="./assets/images/isp-config-logo.png"
+                          alt="ISP config"
+                          class="w-[72px] h-3"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Line -->
+                <div class="border-b border-brand-gray-300 mt-6"></div>
+              </div>
+
+              <!-- Price -->
+              <div class="flex flex-col items-center gap-6 py-6">
+                <div
+                  class="flex items-center gap-1.5 text-brand-dark-100 font-bold"
+                >
+                  <h2>от 467</h2>
+                  <p class="text-[15px]">₽/год</p>
+                </div>
+
+                <a
+                  href="#"
+                  class="h-10 max-w-40 sm:max-w-[189px] w-full mx-auto flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                >
+                  Заказать
+                </a>
+              </div>
+            </div>
+
+            <!-- Plan 4 -->
+            <div class="bg-white rounded-lg overflow-hidden">
+              <!-- Title -->
+              <div class="space-y-5 border-b border-brand-gray-300 pt-5 pb-6">
+                <h4 class="text-black">Расширенная проверка</h4>
+                <div class="flex flex-col items-center gap-5">
+                  <div
+                    class="flex items-center gap-1.5 text-brand-dark-100 font-bold"
+                  >
+                    <h2>9249.00</h2>
+                    <p class="text-[15px]">₽/год</p>
+                  </div>
+
+                  <a
+                    href="#"
+                    class="h-10 max-w-40 sm:max-w-[189px] w-full mx-auto flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                  >
+                    Заказать
+                  </a>
+                </div>
+              </div>
+
+              <!-- Text -->
+              <div class="h-32 text-center pt-6 px-4">
+                <p class="text-[13px] leading-5 text-brand-gray-600 font-bold">
+                  Комплексная проверка компании и домена.
+                </p>
+              </div>
+
+              <!-- Features -->
+              <div class="px-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/ip.png"
+                      alt="IP"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>IP</p>
+                      <p class="font-bold">v4 - 1 шт., v6 - /64 - 1</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/kvm.png"
+                      alt="KVM"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Виртуализация</p>
+                      <p class="font-bold">KVM</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/trafik.png"
+                      alt="Trafik"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Трафик</p>
+                      <p class="font-bold">Безлимитный</p>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/os.png"
+                      alt="OS"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Операционная система</p>
+                      <div class="flex items-center gap-2.5">
+                        <img src="./assets/svgs/windows.svg" alt="Windows" />
+                        <img src="./assets/svgs/linux.svg" alt="Linux" />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="flex items-center gap-2.5">
+                    <img
+                      class="w-8 h-[30px]"
+                      src="./assets/images/panel-brands.png"
+                      alt="Panel"
+                    />
+                    <div
+                      class="text-[13px] leading-5 text-brand-dark-100 text-start"
+                    >
+                      <p>Панель управления</p>
+                      <div class="flex items-center gap-2.5">
+                        <img
+                          src="./assets/images/hestia-logo.png"
+                          alt="Hestia"
+                          class="w-[30px] h-4"
+                        />
+                        <img
+                          src="./assets/images/isp-config-logo.png"
+                          alt="ISP config"
+                          class="w-[72px] h-3"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <!-- Line -->
+                <div class="border-b border-brand-gray-300 mt-6"></div>
+              </div>
+
+              <!-- Price -->
+              <div class="flex flex-col items-center gap-6 py-6">
+                <div
+                  class="flex items-center gap-1.5 text-brand-dark-100 font-bold"
+                >
+                  <h2>от 467</h2>
+                  <p class="text-[15px]">₽/год</p>
+                </div>
+
+                <a
+                  href="#"
+                  class="h-10 max-w-40 sm:max-w-[189px] w-full mx-auto flex items-center justify-center bg-brand-purple font-bold text-[13px] leading-5 rounded-3 hover:bg-brand-green transition-all duration-300"
+                >
+                  Заказать
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What VPS? -->
+      <section id="vps" class="bg-base py-7 lg:pt-8 lg:pb-10">
+        <div
+          class="max-w-base mx-auto space-y-7 lg:space-y-12 px-4 md:px-16 lg:px-4"
+        >
+          <h2>Что такое VPS-хостинг?</h2>
+
+          <div class="grid sm:grid-cols-2 gap-6 text-sm leading-5">
+            <div class="space-y-5">
+              <p>
+                VPS-хостине, также известный ках хостинг виртуальных выделенных
+                серверов, является мощным и гибким хостинговым решением, которое
+                мы предлагаем. В VPS-хостинге мы предоставляем два типа
+                виртуализации для удовлетворения различных потребностей.
+              </p>
+              <p>
+                Второй тип виртуализации - KVM (Kernel-based Virtual Machine),
+                который мы используем в нашей услуге VDS (Virtual Dedicated
+                Server). KVM обеспечивает полную виртуализацию, позволяя
+                выделять ресурсы и полностью контролировать виртуfльный сервер.
+                Он позволяет запускать различные операционные системы и
+                обеспечивает большую гибкость в настройке и конфигурировании.
+                Независимо от того, что вы выберете - VPS с контейнерами LXC или
+                VDS с KVM, — оба варианта обеспечивают надежный и масштабируемый
+                хостинг, отвечающий вашим конкретным требованиям.
+              </p>
+            </div>
+
+            <p>
+              Первый тип — виртуализация LXC (Linux-контейнеры), специально
+              разработанная для нашего VPS-сервиса. Контейнеры LXC обеспечивают
+              отличную производительность и эффективность за счет изоляции
+              каждого виртуального сервера в рамках общего ядра Linux. Это
+              позволяет оптимально распределять ресурсы и обеспечивает
+              безопасность и стабильность среды хостинга.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advantages -->
+      <section id="advantages" class="bg-brand-dark-600 py-7 lg:py-12">
+        <div
+          class="max-w-base mx-auto space-y-7 lg:space-y-11 px-4 md:px-16 lg:px-4"
+        >
+          <h2>В чем преимущества аренды сервера VPS от Uzhosts.com?</h2>
+
+          <!-- Advantages -->
+          <div
+            class="max-w-80 xs:max-w-96 sm:max-w-none mx-auto sm:mx-0 grid xs:grid-cols-2 sm:grid-cols-3 gap-4 lg:gap-6"
+          >
+            <!-- Advantage 1 -->
+            <div class="bg-brand-purple-700 rounded-lg pt-5">
+              <h4>Защита от DDoS-атак</h4>
+              <div class="border-b border-brand-purple-200 py-4">
+                <img
+                  src="./assets/images/advantage-1.png"
+                  alt="Advantage"
+                  class="mx-auto my-4"
+                />
+              </div>
+
+              <p class="text-[13px] leading-4 text-center pt-4 pb-11 px-5">
+                Руководство дата-центра отвечает за принятие мер по защите от
+                DDoS.
+              </p>
+            </div>
+
+            <!-- Advantage 2 -->
+            <div class="bg-brand-purple-700 rounded-lg pt-5">
+              <h4>VPS и Telegram</h4>
+              <div class="border-b border-brand-purple-200 py-4">
+                <img
+                  src="./assets/images/advantage-2.png"
+                  alt="Advantage"
+                  class="mx-auto my-4"
+                />
+              </div>
+
+              <p class="text-[13px] leading-4 text-center pt-4 pb-11 px-5">
+                Получайте уведомления в Telegram обо всем, что происходит на
+                сервере.
+              </p>
+            </div>
+
+            <!-- Advantage 3 -->
+            <div class="bg-brand-purple-700 rounded-lg pt-5">
+              <h4>Гарантированные ресурсы</h4>
+              <div class="border-b border-brand-purple-200 py-4">
+                <img
+                  src="./assets/images/advantage-3.png"
+                  alt="Advantage"
+                  class="mx-auto my-4"
+                />
+              </div>
+
+              <p class="text-[13px] leading-4 text-center pt-4 pb-11 px-5">
+                Для предоставления услуг VPS мы используем виртуализацию
+                Proxmox.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section id="reviews" class="bg-brand-dark-600 pb-14 pt-6 md:pb-0">
+        <div class="max-w-base mx-auto space-y-7 px-4 md:px-16 lg:px-4">
+          <h2>Отзывы</h2>
+
+          <div class="relative">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- Review 1 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Review 2 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Review 3 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Review 4 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <!-- Review 5 -->
+                  <div class="space-y-3 bg-brand-purple-100 rounded-[10px] p-5">
+                    <!-- Author -->
+                    <div class="flex items-center gap-2.5">
+                      <div class="size-8 shrink-0 rounded-full">
+                        <img
+                          src="./assets/images/avatar.png"
+                          alt="avatar"
+                          class="w-full h-full object-cover"
+                        />
+                      </div>
+                      <div class="text-sm font-bold">
+                        <p class="text-brand-purple">Анастасия</p>
+                        <p class="text-brand-brown-100">Киев, Украина</p>
+                      </div>
+                    </div>
+
+                    <p class="text-brand-dark-200">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Navigation Btns -->
+            <div
+              class="absolute -bottom-7 md:bottom-auto z-10 w-full md:top-1/2 md:-translate-y-1/2 flex items-center justify-center md:justify-between gap-8"
+            >
+              <!-- Prev -->
+              <button class="reviews-button-prev group md:-ml-5">
+                <svg
+                  width="9"
+                  height="15"
+                  viewBox="0 0 9 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-purple group-disabled:fill-brand-purple-400"
+                >
+                  <path
+                    d="M7.33139 15L7.07659 14.8889C4.72557 12.6199 2.41096 10.2918 0.131205 7.95039C-0.104434 7.55651 -0.00634766 7.15612 0.30094 6.84194C2.58337 4.60586 4.78381 2.27324 7.11529 0.0946379C7.4904 -0.0908079 7.8065 0.0122604 8.10842 0.265906C8.55249 0.639479 9.04829 1.16669 8.67395 1.77016L2.96921 7.51207L8.64406 13.2038C8.91419 13.6184 8.8184 13.9728 8.51801 14.3268C8.29157 14.5931 7.98274 14.8801 7.65323 15H7.331H7.33139Z"
+                  />
+                </svg>
+              </button>
+
+              <!-- Next -->
+              <button class="reviews-button-next group md:-mr-5">
+                <svg
+                  width="9"
+                  height="15"
+                  viewBox="0 0 9 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-brand-purple group-disabled:fill-brand-purple-400"
+                >
+                  <g clip-path="url(#clip0_11_338)">
+                    <path
+                      d="M1.66843 0L1.92323 0.111114C4.27424 2.38014 6.58886 4.70817 8.86861 7.04961C9.10425 7.44349 9.00616 7.84388 8.69888 8.15806C6.41644 10.3941 4.216 12.7268 1.88453 14.9054C1.50942 15.0908 1.19332 14.9877 0.891398 14.7341C0.447326 14.3605 -0.0484724 13.8333 0.325867 13.2298L6.03061 7.48793L0.355752 1.79621C0.0856307 1.38164 0.181419 1.02723 0.481809 0.673197C0.708252 0.406907 1.01707 0.119926 1.34658 0H1.66881H1.66843Z"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11_338">
+                      <rect
+                        width="8.80559"
+                        height="15"
+                        fill="white"
+                        transform="translate(0.194275)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Buy? -->
+      <section id="why-buy" class="bg-ssl pt-5 pb-7 lg:pt-7 lg:pb-12">
+        <div class="max-w-base mx-auto space-y-8 lg:space-y-16 px-4">
+          <h2>Почему стоит заказать VPS в Uzhosts.com?</h2>
+
+          <!-- Items -->
+          <div
+            class="max-w-96 sm:max-w-none mx-auto sm:mx-0 grid md:grid-cols-2 gap-x-5 gap-y-10 lg:gap-y-14 lg:gap-11"
+          >
+            <!-- Item 1 -->
+            <div class="flex gap-5 sm:gap-8">
+              <img
+                src="./assets/images/buy-1.png"
+                alt="Image"
+                class="w-20 h-32 sm:w-[107px] sm:h-[149px]"
+              />
+
+              <!-- Texts -->
+              <div class="space-y-4 sm:space-y-6">
+                <h3 class="text-start">Максимальная производительность</h3>
+                <p class="text-sm sm:text-base">
+                  Благодаря использованию современных высокопроизводительных
+                  процессоров и сверхбыстрых дисков промышленного класса мы
+                  минимизируем обработку запросов к базам данных и достигаем
+                  исключительной скорости передачи данных даже при высокой
+                  нагрузке. Именно поэтому наши клиенты неизменно занимают
+                  верхние строчки в результатах выдачи Google.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="flex gap-5 sm:gap-8">
+              <img
+                src="./assets/images/buy-2.png"
+                alt="Image"
+                class="w-20 h-32 sm:w-[107px] sm:h-[149px]"
+              />
+
+              <!-- Texts -->
+              <div class="space-y-4 sm:space-y-6">
+                <h3 class="text-start">Программный стек</h3>
+                <p class="text-sm sm:text-base">
+                  VPS-костинг Uzhosts.com предоставляет широкий выбор
+                  дистрибутивов ОС Linux, включая Debian, Ubuntu и CentOS, а
+                  также множество панелей управления, таких как Hestia и
+                  ISPConfig. Эти возможности позволяют превратить VPS-сервер в
+                  комплексную платформу для эффективного хранения данных.
+                  Благодаря тому, что все необходимое для успешной работы
+                  ресурса удобно расположено в одном месте, Uzhosts обеспечивает
+                  бесперебойную работу хостинга.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="flex gap-5 sm:gap-8">
+              <img
+                src="./assets/images/buy-3.png"
+                alt="Image"
+                class="w-20 h-32 sm:w-[107px] sm:h-[149px]"
+              />
+
+              <!-- Texts -->
+              <div class="space-y-4 sm:space-y-6">
+                <h3 class="text-start">Администрация</h3>
+                <p class="text-sm sm:text-base">
+                  Пользователи имеют возможность приобрести дополнительную
+                  поддержку, что позволяет нашим, администраторам выполнять их
+                  конкретные запросы/ Однако следует иметь в иду, что для
+                  решения таких задач, как диагностика или вирусный мониторинг
+                  не существует автоматизированной системы. Наши специалисты
+                  будут лично решать все вопросы пользователей и обеспечивать
+                  удовлетворение их потребностей.
+                </p>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="flex gap-5 sm:gap-8">
+              <img
+                src="./assets/images/buy-4.png"
+                alt="Image"
+                class="w-20 h-32 sm:w-[107px] sm:h-[149px]"
+              />
+
+              <!-- Texts -->
+              <div class="space-y-4 sm:space-y-6">
+                <h3 class="text-start">Резервные копии</h3>
+                <p class="text-sm sm:text-base">
+                  Мы обеспечиваем автоматическое резервное копирование, но не
+                  храним историю резервного копирования. Это означает, что
+                  пользователи могут откатиться только к предыдущей резервной
+                  копии. Однако пользователи могут приобрести дополнительные
+                  услуги резервного копирования, если им требуются более широкие
+                  возможности резервного копирования.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- How To Use Panel -->
+      <section id="how-use-panel" class="bg-base py-7 lg:pt-9 lg:pb-12">
+        <div
+          class="max-w-base mx-auto space-y-7 lg:space-y-12 px-4 md:px-16 lg:px-4"
+        >
+          <h2>Какие панели управления вы можете использовать?</h2>
+
+          <!-- Brands -->
+          <div
+            class="max-w-96 xs:max-w-[535px] mx-auto grid xs:grid-cols-2 gap-4 lg:gap-6 text-center text-black"
+          >
+            <!-- Brand 1 -->
+            <div class="space-y-5 bg-white rounded-lg py-6 px-8">
+              <img src="./assets/images/logo-brand.png" alt="IPS panel" />
+
+              <p class="text-sm leading-5">
+                Удобный интерфейс, широкий функционал, поддержка популярных ОС и
+                программного обеспечения.
+              </p>
+            </div>
+            <!-- Brand 2 -->
+            <div class="space-y-5 bg-white rounded-lg py-6 px-8">
+              <img
+                src="./assets/images/logo-brand-2.png"
+                alt="Hestia"
+                class="w-[130px] h-16 mx-auto"
+              />
+
+              <p class="text-sm leading-5">
+                Самая популярная панель управления в мире. Имеет и графический
+                интерфейс, и WHM, поэтому можно управлять сервером на любом из
+                них
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Support -->
+      <section
+        id="support"
+        class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5 bg-brand-purple-500 px-4 md:px-16 lg:px-4 py-5"
+      >
+        <p class="text-base text-center sm:text-lg sm:leading-6">
+          Нужна помощь? Наша поддержка будет рада вам помочь.
+        </p>
+        <a
+          href="#"
+          class="h-7 font-bold text-xs leading-4 whitespace-nowrap flex items-center justify-center border border-white rounded-3 hover:bg-brand-green hover:border-brand-green transition-all duration-300 px-2"
+        >
+          Обратиться в службу поддержки
+        </a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark-400">
+      <div class="max-w-base mx-auto pt-3 pb-11 px-4 md:px-16 lg:px-4">
+        <!-- Top Links -->
+        <div
+          class="max-w-[600px] flex flex-col sm:flex-row sm:justify-between gap-6"
+        >
+          <!-- Links 1 -->
+          <ul class="space-y-0.5 text-sm text-brand-gray-100 leading-5">
+            <li>
+              <a
+                href="./index.html"
+                class="hover:text-brand-green transition-all duration-300"
+                >Хостинг</a
+              >
+            </li>
+            <li>
+              <a
+                href="./ssl.html"
+                class="hover:text-brand-green transition-all duration-300"
+                >SSL-сертификаты</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >VPS</a
+              >
+            </li>
+            <li>
+              <a
+                href="#prices"
+                class="hover:text-brand-green transition-all duration-300"
+                >Цены</a
+              >
+            </li>
+          </ul>
+          <!-- Links 2 -->
+          <ul class="space-y-0.5 text-sm text-brand-gray-100 leading-5">
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >Новости</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >О компании</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >Партнерская программа</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-brand-green transition-all duration-300"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+          <!-- Contacts -->
+          <ul class="space-y-0.5 text-sm text-brand-gray-100 leading-5">
+            <li class="flex flex-col">
+              <a
+                href="mailto:admin@uzhosts.com"
+                class="text-brand-purple font-bold hover:text-brand-green transition-all duration-300"
+                >admin@uzhosts.com</a
+              >
+              <span class="text-xs">онлайн-поддержка</span>
+            </li>
+            <li class="flex flex-col">
+              <a
+                href="№"
+                class="text-brand-purple font-bold hover:text-brand-green transition-all duration-300"
+                >Livechat</a
+              >
+              <span class="text-xs">онлайн чат</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Payment Logos -->
+      <div class="border-y-2 border-brand-dark-500 py-2.5 sm:pt-4 sm:pb-3.5">
+        <div
+          class="max-w-[500px] mx-auto grid grid-cols-3 sm:flex items-center justify-center gap-5 sm:gap-10 pt-3 pb-4 px-4 md:px-16 lg:px-4"
+        >
+          <img
+            src="./assets/svgs/mastercard.svg"
+            class="mx-auto"
+            alt="MasterCard Logo"
+          />
+          <img src="./assets/svgs/visa.svg" class="mx-auto" alt="Visa Logo" />
+          <img
+            src="./assets/svgs/paypal.svg"
+            class="mx-auto"
+            alt="PayPal Logo"
+          />
+          <img src="./assets/svgs/sepa.svg" class="mx-auto" alt="Sepa Logo" />
+          <img src="./assets/svgs/swift.svg" class="mx-auto" alt="Swift Logo" />
+          <img src="./assets/svgs/ozen.svg" class="mx-auto" alt="Ozen Logo" />
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div
+        class="max-w-base mx-auto flex flex-col sm:flex-row items-center sm:justify-between gap-4 text-brand-gray-100 py-3 px-4 md:px-16 lg:px-4"
+      >
+        <p class="text-xs">© 2023 Uzhosts.com. Все права защищены.</p>
+
+        <div class="flex items-center gap-5 text-xs">
+          <a
+            href="#"
+            class="font-bold hover:text-brand-green transition-all duration-300"
+            >Условия использования</a
+          >
+          <a
+            href="#"
+            class="font-bold hover:text-brand-green transition-all duration-300"
+            >Политика конфиденциальности</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
