@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Get the current page URL
   const currentUrl = window.location.pathname;
 
-  // Select all navigation links
-  const navLinks = document.querySelectorAll("nav a");
+  // Select all navigation links (both in desktop and mobile menus)
+  const navLinks = document.querySelectorAll("nav a, .mobile-menu a");
 
   // Loop through each link and compare its href with the current URL
   navLinks.forEach((link) => {
