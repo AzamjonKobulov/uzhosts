@@ -1,101 +1,39 @@
-// Toggle mobile menu visibility
-document.getElementById("mobileMenuBtn").addEventListener("click", function () {
-  const mobileMenu = document.getElementById("mobileMenu");
-  mobileMenu.classList.toggle("hidden");
+const mobMenu = document.querySelector("#mobMenu");
+const mobMenuToggle = document.querySelector("#mobMenuToggle");
+const menuIcon = document.querySelector(".menu-icon");
+const menuX = document.querySelector(".menu-x");
+
+mobMenuToggle.addEventListener("click", function () {
+  mobMenu.classList.toggle("hidden");
   document.body.classList.toggle("overflow-hidden");
+  mobMenuToggle.classList.toggle("border-theme-foreground");
+  mobMenuToggle.classList.toggle("border-theme-input");
+  menuIcon.classList.toggle("hidden");
+  menuX.classList.toggle("hidden");
 });
 
-// Close the mobile menu when any link or button is clicked
-const mobileMenuLinksAndButtons = document.querySelectorAll(
-  "#mobileMenu a, #mobileMenu button"
+mobMenu.querySelectorAll("a, button").forEach((item) =>
+  item.addEventListener("click", function () {
+    mobMenu.classList.toggle("hidden");
+  })
 );
 
-mobileMenuLinksAndButtons.forEach(function (element) {
-  element.addEventListener("click", function () {
-    const mobileMenu = document.getElementById("mobileMenu");
-    mobileMenu.classList.add("hidden");
-    document.body.classList.toggle("overflow-hidden");
-  });
-});
+// function showToast() {
+//   let toast = document.getElementById("toast");
+//   toast.classList.remove("hidden", "opacity-0", "scale-95");
+//   toast.classList.add("opacity-100", "scale-100");
 
-var swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".reviews-button-next",
-    prevEl: ".reviews-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 12,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 15,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 15,
-    },
-  },
-});
+//   // Auto-hide after 3 seconds
+//   setTimeout(closeToast, 3000);
+// }
 
-// Select buttons and plans
-const buttons = document.querySelectorAll(".tab-button");
-const plans = document.querySelectorAll(".plan");
+// function closeToast() {
+//   let toast = document.getElementById("toast");
+//   toast.classList.remove("opacity-100", "scale-100");
+//   toast.classList.add("opacity-0", "scale-95");
 
-// Add event listener for each button to update prices
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    // Remove active class from all buttons
-    buttons.forEach((btn) => btn.classList.remove("tab-active"));
-    button.classList.add("tab-active"); // Add active class to clicked button
-
-    // Get the period from the button data
-    const period = parseInt(button.dataset.period);
-
-    // Loop through each plan and update the price based on the selected period
-    plans.forEach((plan) => {
-      const baseOriginalPrice = parseFloat(plan.dataset.originalPrice);
-      const discount = parseFloat(plan.dataset.discount);
-      const basePrice = parseFloat(plan.dataset.price);
-
-      // Calculate the discounted price
-      const discountedPrice =
-        baseOriginalPrice - baseOriginalPrice * (discount / 100);
-
-      // Update the cost text and original price
-      plan.querySelector(".price").textContent = (
-        discountedPrice * period
-      ).toFixed(2);
-      plan.querySelector(".original-price").textContent = (
-        baseOriginalPrice * period
-      ).toFixed(2);
-    });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Get the current page URL
-  const currentUrl = window.location.pathname;
-
-  // Select all navigation links (both in desktop and mobile menus)
-  const navLinks = document.querySelectorAll("nav a, .mobile-menu a");
-
-  // Loop through each link and compare its href with the current URL
-  navLinks.forEach((link) => {
-    const linkPath = new URL(link.href).pathname; // Get the absolute path of the link
-    if (linkPath === currentUrl) {
-      link.classList.add("font-bold"); // Add the active class
-    } else {
-      link.classList.remove("font-bold"); // Ensure others don't have the class
-    }
-  });
-});
+//   // Remove from DOM after animation
+//   setTimeout(() => {
+//     toast.classList.add("hidden");
+//   }, 300);
+// }
